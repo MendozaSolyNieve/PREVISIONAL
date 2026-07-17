@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contacto — Bienvenido Previsional</title>
+<title>Contacto — Estudio Gonzalez y Asociados, Mendoza</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -11,7 +11,7 @@
 <body>
 <header>
   <div class="navbar wrap">
-    <a href="index.html" class="brand"><span class="dot"></span>Bienvenido Previsional</a>
+    <a href="index.html" class="brand"><span class="dot"></span>Estudio Gonzalez y Asociados</a>
     <div class="menu-row">
       <nav><ul>
         <li><a href="index.html">Inicio</a></li>
@@ -37,27 +37,27 @@
   <div class="wrap contact-grid">
     <div class="card-white reveal">
       <h2 style="font-size:22px; margin-bottom:22px;">Contanos tu situación</h2>
-      <form onsubmit="event.preventDefault(); alert('Este formulario es una demostración. En el sitio real, esto se conecta al asistente de IA y al calendario.');">
-        <div class="form-field"><label for="nombre">Nombre y apellido</label><input id="nombre" type="text" placeholder="Ej: María Fernández" required></div>
-        <div class="form-field"><label for="contacto-medio">WhatsApp o email</label><input id="contacto-medio" type="text" placeholder="Ej: +54 9 11 1234-5678" required></div>
+      <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+        <div class="form-field"><label for="nombre">Nombre y apellido</label><input id="nombre" name="nombre" type="text" placeholder="Ej: María Fernández" required></div>
+        <div class="form-field"><label for="contacto-medio">WhatsApp o email</label><input id="contacto-medio" name="contacto" type="text" placeholder="Ej: +54 9 261 123-4567" required></div>
         <div class="form-field">
           <label>¿Sobre qué tema necesitás asesoramiento?</label>
           <div class="chips-select">
-            <label><input type="radio" name="tema" checked> Jubilación ordinaria</label>
-            <label><input type="radio" name="tema"> Reajuste de haberes</label>
-            <label><input type="radio" name="tema"> Pensión</label>
-            <label><input type="radio" name="tema"> Incapacidad</label>
-            <label><input type="radio" name="tema"> Otro</label>
+            <label><input type="radio" name="tema" value="Jubilación ordinaria" checked> Jubilación ordinaria</label>
+            <label><input type="radio" name="tema" value="Reajuste de haberes"> Reajuste de haberes</label>
+            <label><input type="radio" name="tema" value="Pensión"> Pensión</label>
+            <label><input type="radio" name="tema" value="Incapacidad"> Incapacidad</label>
+            <label><input type="radio" name="tema" value="Otro"> Otro</label>
           </div>
         </div>
-        <div class="form-field"><label for="mensaje">Contanos brevemente tu caso (opcional)</label><textarea id="mensaje" placeholder="Ej: Me jubilé hace 5 años y creo que mi haber quedó desactualizado..."></textarea></div>
-        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">💬 Enviar y agendar turno</button>
+        <div class="form-field"><label for="mensaje">Contanos brevemente tu caso (opcional)</label><textarea id="mensaje" name="mensaje" placeholder="Ej: Me jubilé hace 5 años y creo que mi haber quedó desactualizado..."></textarea></div>
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">💬 Enviar consulta</button>
       </form>
     </div>
 
     <div class="reveal">
-      <div class="info-row"><div class="info-ic">📱</div><div><h3>WhatsApp</h3><p>+54 9 11 XXXX-XXXX — respuesta en el día</p></div></div>
-      <div class="info-row"><div class="info-ic">✉️</div><div><h3>Email</h3><p>contacto@estudioprevisional.com</p></div></div>
+      <div class="info-row"><div class="info-ic">📱</div><div><h3>WhatsApp</h3><p>+54 9 261 535-8230 — respuesta en el día</p></div></div>
+      <div class="info-row"><div class="info-ic">✉️</div><div><h3>Email</h3><p>gonzalezyasociadoslegales@gmail.com</p></div></div>
       <div class="info-row"><div class="info-ic">📍</div><div><h3>Ubicación</h3><p>Consultas presenciales y online, según lo prefieras.</p></div></div>
       <div class="info-row"><div class="info-ic">⏱️</div><div><h3>Horarios</h3><p>Lunes a viernes de 9 a 18hs. El asistente virtual agenda turnos las 24 horas.</p></div></div>
     </div>
@@ -81,14 +81,14 @@
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div><div class="brand">Bienvenido Previsional</div><p>Estudio jurídico especializado en Derecho Previsional.</p><p>Matrícula N.º XXXXX — Colegio de Abogados</p></div>
-      <div><h3>Contacto</h3><ul><li><a href="#">📱 WhatsApp: +54 9 11 XXXX-XXXX</a></li><li><a href="#">✉️ contacto@estudioprevisional.com</a></li></ul></div>
+      <div><div class="brand">Estudio Gonzalez y Asociados</div><p>Estudio jurídico especializado en Derecho Previsional.</p><p>Matrícula N.º 12727 — Colegio de Abogados de Mendoza</p></div>
+      <div><h3>Contacto</h3><ul><li><a href="https://wa.me/5492615358230?text=Hola%2C%20quiero%20hacer%20una%20consulta%20previsional" target="_blank" rel="noopener">📱 WhatsApp: +54 9 261 535-8230</a></li><li><a href="mailto:gonzalezyasociadoslegales@gmail.com">✉️ gonzalezyasociadoslegales@gmail.com</a></li></ul></div>
       <div><h3>Navegación</h3><ul><li><a href="areas.html">Áreas de práctica</a></li><li><a href="blog.html">Blog</a></li></ul></div>
     </div>
-    <div class="foot-bottom"><span>© 2026 Bienvenido Previsional.</span><span>Sitio de demostración</span></div>
+    <div class="foot-bottom"><span>© 2026 Estudio Gonzalez y Asociados.</span><span>Sitio en construcción</span></div>
   </div>
 </footer>
-<a href="#form" class="wa-float" aria-label="Contactar por WhatsApp">📲</a>
+<a href="https://wa.me/5492615358230?text=Hola%2C%20quiero%20hacer%20una%20consulta%20previsional" target="_blank" rel="noopener" class="wa-float" aria-label="Contactar por WhatsApp">📲</a>
 <script>
 const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show'); io.unobserve(e.target);}});}, {threshold:0.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
