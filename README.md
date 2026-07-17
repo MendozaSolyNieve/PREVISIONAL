@@ -36,6 +36,17 @@ Para verificar que todo subió bien: en la página principal del repositorio ten
 
 ---
 
+## Calendario de turnos (Calendly) — ya conectado ✅
+
+El calendario en `contacto.html` ya está enlazado a tu cuenta: `https://calendly.com/estudiojuridicogonzalez`.
+
+Solo falta que entres a [calendly.com](https://calendly.com) y confirmes:
+- Que tengas un tipo de evento activo (ej. "Consulta previsional", 20-30 min)
+- Tus días y horarios disponibles
+- Si querés, sincronizarlo con tu Google Calendar desde la configuración de Calendly, para que los turnos aparezcan ahí automáticamente
+
+Si más adelante creás un evento con otro nombre o cambiás de link, hay que actualizar la línea `data-url` dentro de `contacto.html`.
+
 ## Activar el formulario de contacto
 
 El formulario de `contacto.html` está preparado para funcionar con **Formspree** (gratis, sin necesidad de programar backend):
