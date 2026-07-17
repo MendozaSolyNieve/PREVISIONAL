@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre mí — Bienvenido Previsional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .about-grid{display:grid; grid-template-columns:0.8fr 1.2fr; gap:50px; align-items:start;}
+  @media (max-width:860px){ .about-grid{grid-template-columns:1fr;} }
+  .photo-placeholder{background:linear-gradient(135deg, var(--teal-700), var(--sage)); border-radius:var(--radius); aspect-ratio:4/5; display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.85); font-size:15px; font-weight:600; text-align:center; padding:20px;}
+  .value-list{display:grid; gap:18px; margin-top:16px;}
+  .value-item{display:flex; gap:16px; align-items:flex-start;}
+  .value-ic{width:44px; height:44px; border-radius:12px; background:var(--sage-light); display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0;}
+</style>
+</head>
+<body>
+<header>
+  <div class="navbar wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>Bienvenido Previsional</a>
+    <div class="menu-row">
+      <nav><ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="areas.html">Áreas de práctica</a></li>
+        <li><a href="sobre-mi.html" aria-current="page">Sobre mí</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul></nav>
+      <a class="nav-cta" href="contacto.html">Agendar consulta</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Sobre mí</span>
+    <h1>Un estudio joven, enfocado en un solo objetivo: tu tranquilidad</h1>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap about-grid">
+    <div class="photo-placeholder reveal">[ Foto profesional del abogado/a ]</div>
+    <div class="reveal">
+      <p style="font-size:18px; color:#33454a; margin-bottom:20px;">Soy abogado/a especializado/a en Derecho Previsional. Decidí enfocar mi estudio en esta área porque veo, todos los días, cuánta gente no reclama lo que le corresponde simplemente por no saber que puede hacerlo.</p>
+      <p style="font-size:18px; color:#33454a; margin-bottom:20px;">Aunque el estudio recién está empezando, eso significa que cada consulta recibe atención personalizada — no sos un expediente más entre cientos.</p>
+
+      <h2 style="font-size:22px; margin-top:36px; margin-bottom:18px;">Cómo trabajamos</h2>
+      <div class="value-list">
+        <div class="value-item"><div class="value-ic">🔍</div><div><h3 style="font-size:17px;">Análisis honesto</h3><p style="font-size:15.5px; color:#55655f;">Si tu caso no tiene fundamento para reclamar, te lo decimos desde el principio.</p></div></div>
+        <div class="value-item"><div class="value-ic">🗣️</div><div><h3 style="font-size:17px;">Lenguaje claro</h3><p style="font-size:15.5px; color:#55655f;">Explicamos cada trámite sin jerga legal innecesaria.</p></div></div>
+        <div class="value-item"><div class="value-ic">📲</div><div><h3 style="font-size:17px;">Acompañamiento constante</h3><p style="font-size:15.5px; color:#55655f;">Te mantenemos informado del estado de tu expediente en cada etapa.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap" style="text-align:center;">
+    <h2>¿Charlamos sobre tu situación?</h2>
+    <p style="color:#4a5a5e; margin-bottom:28px;">La primera consulta es gratuita y sin compromiso.</p>
+    <a href="contacto.html" class="btn-primary">💬 Agendar consulta gratuita</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand">Bienvenido Previsional</div><p>Estudio jurídico especializado en Derecho Previsional.</p><p>Matrícula N.º XXXXX — Colegio de Abogados</p></div>
+      <div><h3>Contacto</h3><ul><li><a href="#">📱 WhatsApp: +54 9 11 XXXX-XXXX</a></li><li><a href="#">✉️ contacto@estudioprevisional.com</a></li></ul></div>
+      <div><h3>Navegación</h3><ul><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Bienvenido Previsional.</span><span>Sitio de demostración</span></div>
+  </div>
+</footer>
+<a href="#" class="wa-float" aria-label="Contactar por WhatsApp">📲</a>
+<script>
+const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show'); io.unobserve(e.target);}});}, {threshold:0.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
